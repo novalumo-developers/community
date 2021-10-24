@@ -20,8 +20,13 @@ jobs:
 
       - name: Install NPM packages
         run: npm ci
+        
+      - name: Build
+        run: npm run build
+        # env:
+          # URL_PREFIX: myapp
 
-      - name: Export Next.js app
+      - name: Export
         run: npm run export
 
       - name: Deploy to GitHub Pages
