@@ -1,0 +1,15 @@
+.animate {
+
+  // Title --->
+  &[data-animation="title"] {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, 25);
+    transition: ease .5s;
+  
+    &.animated {
+      opacity: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+  
+}
