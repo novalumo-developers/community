@@ -1,5 +1,3 @@
-// next
-import Image from "next/image"
 // styled
 import styled from "styled-components"
 // assets
