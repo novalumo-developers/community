@@ -1,6 +1,4 @@
-// seo
 import SEO from "../components/SEO";
-// layout
 import DefaultLayout from "../layouts/default";
 
 export default function GetStarted() {

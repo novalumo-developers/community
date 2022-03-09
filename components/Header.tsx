@@ -1,7 +1,5 @@
-// next
 import Link from "next/link";
-// styled
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 const HeaderComponent = styled.header`
   display: flex;

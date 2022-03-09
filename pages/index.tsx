@@ -1,20 +1,20 @@
-// next
 import Link from "next/link";
-// styled
-import styled from "styled-components";
-// seo
+import styled from "@emotion/styled";
 import SEO from "../components/SEO";
-// layout
 import DefaultLayout from "../layouts/default";
-// fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import {
+  Box,
+  Container,
+  Heading,
+  VStack,
+  Text,
+  Button,
+  HStack,
+} from "@chakra-ui/react";
 
 const IndexPage = styled.div`
-  .lead {
-    font-size: 1.2rem;
-  }
-
   main {
     display: flex;
     justify-content: center;
@@ -39,37 +39,48 @@ export default function Home() {
       </SEO>
       <DefaultLayout>
         <IndexPage>
-          <div className="row">
-            <div className="col-12">
-              <main>
-                <h1 className="animate" data-animation="title">
+          <Container>
+            <Box
+              minHeight={"100vh"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              <VStack height={"100%"}>
+                {/* text */}
+                <Heading mb={-1} className="animate" data-animation="title">
                   Novalumo Developers
-                </h1>
-                <p className="lead animate" data-animation="title">
+                </Heading>
+                <Text fontSize="xl" className="animate" data-animation="title">
                   デベロッパーが、集う場所。
-                </p>
-
-                <section className="animate" data-animation="title">
-                  <a
+                </Text>
+                {/* button */}
+                <HStack className="animate" data-animation="title">
+                  <Button
+                    as="a"
                     href="https://github.com/novalumo-developers"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn"
+                    colorScheme={"blackAlpha"}
                   >
-                    <FontAwesomeIcon icon={faGithub} className="fa-fw me-2" />
+                    <FontAwesomeIcon icon={faGithub} />
                     GitHub
-                  </a>
-                  <a href="#" className="btn">
-                    <FontAwesomeIcon icon={faDiscord} className="fa-fw me-2" />
-                    Discord
-                  </a>
-                  <Link href="/get-started">
-                    <a className="btn">Get Started</a>
+                  </Button>
+                  <Link href="#" passHref>
+                    <Button as="a" colorScheme={"blackAlpha"}>
+                      <FontAwesomeIcon icon={faDiscord} />
+                      Discord
+                    </Button>
                   </Link>
-                </section>
-              </main>
-            </div>
-          </div>
+                  <Link href="/#get-started" passHref>
+                    <Button as={"a"} colorScheme={"blackAlpha"}>
+                      Get Started
+                    </Button>
+                  </Link>
+                </HStack>
+              </VStack>
+            </Box>
+          </Container>
         </IndexPage>
       </DefaultLayout>
     </>

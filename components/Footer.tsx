@@ -1,6 +1,4 @@
-// styled
-import styled from "styled-components";
-// assets
+import styled from "@emotion/styled";
 import LogoImg from "../assets/img/logo.svg";
 
 const FooterComponent = styled.footer`

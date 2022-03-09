@@ -1,4 +1,3 @@
-// next
 import Head from "next/head";
 
 export default function SEO({ children, title = "" }) {
