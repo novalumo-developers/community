@@ -1,9 +1,9 @@
 // unused?
-import styled from "styled-components"
+import styled from "styled-components";
 
 const ModalComponent = styled.div`
   .overlay {
-    background: rgba(0, 0, 0, .75);
+    background: rgba(0, 0, 0, 0.75);
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -11,11 +11,11 @@ const ModalComponent = styled.div`
     width: 100vw;
     height: 100vh;
     z-index: 50;
-    transition: ease .1s;
+    transition: ease 0.1s;
   }
   .modal {
     background: #fff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,13 +26,13 @@ const ModalComponent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: ease .1s;
+    transition: ease 0.1s;
   }
   .btn {
     background: rgb(0, 174, 255);
     color: #fff;
   }
-`
+`;
 
 export default function Modal() {
   return (
@@ -46,5 +46,5 @@ export default function Modal() {
         </div>
       </ModalComponent>
     </>
-  )
+  );
 }

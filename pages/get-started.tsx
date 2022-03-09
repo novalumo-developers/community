@@ -1,7 +1,7 @@
 // seo
-import SEO from "../components/SEO"
+import SEO from "../components/SEO";
 // layout
-import DefaultLayout from "../layouts/default"
+import DefaultLayout from "../layouts/default";
 
 export default function GetStarted() {
   return (
@@ -12,10 +12,11 @@ export default function GetStarted() {
       <DefaultLayout>
         <div>
           <h1>Get Started</h1>
-          
-          <p>どのようなレポジトリでもOK、学んでいることや制作しているものを共有する場としてお使いください！</p>
+          <p>
+            どのようなレポジトリでもOK、学んでいることや制作しているものを共有する場としてお使いください！
+          </p>
         </div>
       </DefaultLayout>
     </>
-  )
+  );
 }

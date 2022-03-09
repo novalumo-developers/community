@@ -1,7 +1,7 @@
 // next
-import Link from "next/link"
+import Link from "next/link";
 // styled
-import styled from "styled-components"
+import styled from "styled-components";
 
 const HeaderComponent = styled.header`
   display: flex;
@@ -12,16 +12,16 @@ const HeaderComponent = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
-  transition: ease .2s;
+  transition: ease 0.2s;
 
   .logo {
     color: inherit;
     font-size: 1.8rem;
     margin: 0 0 0 4px;
     text-decoration: none;
-    transition: ease .1s;
+    transition: ease 0.1s;
     &:hover {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 
@@ -37,13 +37,13 @@ const HeaderComponent = styled.header`
       margin: 0 0 0 1rem;
       color: inherit;
       text-decoration: none;
-      transition: ease .1s;
+      transition: ease 0.1s;
       &:hover {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
   }
-`
+`;
 
 export default function Header() {
   return (
@@ -55,9 +55,17 @@ export default function Header() {
       </div>
       <div>
         <ul>
-          <li><a href="https://github.com/novalumo-developers" target="_blank" rel="noopener noreferrer">GitHub</a></li>          
+          <li>
+            <a
+              href="https://github.com/novalumo-developers"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
         </ul>
       </div>
     </HeaderComponent>
-  )
+  );
 }

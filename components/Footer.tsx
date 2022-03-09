@@ -1,7 +1,7 @@
 // styled
-import styled from "styled-components"
+import styled from "styled-components";
 // assets
-import LogoImg from "../assets/img/logo.svg"
+import LogoImg from "../assets/img/logo.svg";
 
 const FooterComponent = styled.footer`
   max-width: 780px;
@@ -27,18 +27,14 @@ const FooterComponent = styled.footer`
     a {
       color: inherit;
       text-decoration: none;
-      transition: ease .1s;
+      transition: ease 0.1s;
       &:hover {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
-
   }
-`
+`;
 
 export default function Footer() {
-  return (
-    <>
-    </>
-  )
+  return <></>;
 }
